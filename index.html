@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Design & Development</title>
+
+	<style>
+
+		:root {
+		  --blue: #007BA8;
+		}
+
+
+		html {
+			font-size:62.5%;
+
+		}
+		body {
+			margin:0;
+
+			height:100vh;
+			font-family:"Helvetica Neue", sans-serif;
+			overflow-x:hidden;
+			background:#FFF;
+			color:#1D1D1F;
+			line-height:160%;
+  			font-size: 2rem;	
+  		}
+
+
+
+		h1, h2, h3, h4, h5, h6, .logo {
+			font-family:"Helvetica Neue", sans-serif;
+			line-height:130%;
+			font-weight: 800;
+		}
+
+		a {
+			color:#1D1D1F;
+			cursor: target;
+			text-decoration: none;
+
+		}
+
+		.tools {
+			margin-top:10rem;
+		}
+		.clients {
+			margin-top:45rem;
+		}
+		.job-right {
+			font-style:italic;
+		}
+
+		.content {
+			position:relative;
+		}
+
+		.job-left {
+			margin-right:2rem;
+		}
+
+
+
+		.previous-jobs {
+			margin-top:5rem;
+			display:flex;
+			flex-direction:column;
+		}
+
+		.job {
+			display:flex;
+			flex-direction:row;
+			align-items:center;
+			width:100%;
+			justify-content: space-between;
+			margin-top:3rem;
+		}
+
+		li {
+			margin:10px 0;
+		}
+
+		header {
+			position:fixed; 
+			padding:1.5rem 3rem;
+			z-index:1;
+
+		}
+
+		.logo {
+			font-size:rem;
+			display:flex;
+			padding:1px 0;
+
+   		}
+
+		.space {
+			width:10px;
+		}
+
+		p {
+			max-width:50ch;
+		}
+
+		.section1-content {
+			display:flex;
+			width:100%;
+			justify-content: space-between;
+			gap:15rem;
+
+		}
+
+		.section1-content > * {
+			flex-basis:100%;
+		}
+
+		section {
+			text-align:left;
+			padding:10rem;
+			max-width:140rem;
+			margin:0 auto;
+
+		}
+
+		.box {
+			background:#111;
+			width:200px;
+			height:200px;
+		}
+		.section2 {
+			background:#fff;
+			position:relative;
+			text-align:left;
+		}
+		h3 {
+			font-size:4.5rem;
+		}
+		h2 {
+			font-size:9rem;
+		}
+
+		h4 {
+
+			font-size:3rem;
+			margin:0;
+
+		}
+
+		.grid {
+			margin-top:10rem;
+			display:grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			align-items:center;
+			gap:2.5rem;
+			max-width:50rem;
+		}
+		.grid img {
+			max-height:8rem;
+			max-width:100%;
+			filter:grayscale(1);
+			margin:0 auto;
+		}
+		header {
+			display: flex;
+			width: calc(100% - 6rem);
+			justify-content: space-between;
+			align-items: flex-start;
+			background: #fff;
+		}
+		.menu-right {
+			display: flex;
+			gap: 1.5rem;
+			font-weight: 300;
+			align-items: center;
+			letter-spacing: 0.07rem;
+		}
+
+		.menu-right a {
+			color: var(--blue);
+		}
+
+		h1 {
+			font-size: 2.4rem;
+			margin-bottom: 4rem;
+			font-weight: 300;
+			letter-spacing: .07rem;
+		}
+
+		.keuzes {
+			font-size: 1.8rem;
+			line-height: 130%;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			margin-top: 2rem;
+		}
+
+		.keuzes li {
+			margin-top: 0;
+			margin-bottom: 1.5rem;
+		}
+
+
+		.keuzes li a {
+			background: var(--blue);
+			padding: 0.7rem 2rem;
+			color: #fff;
+			display: inline-block;
+			font-weight: 700;
+		}
+
+
+
+		@media (max-width:1000px) {
+			body {
+			line-height:130%;
+  			font-size: 1.8rem;	
+	  		}
+			.logo {
+				font-size:2rem;
+			}
+			.space {
+				width:5px;
+			}
+			.grid {
+				margin-top: 2rem;
+				opacity: .5;
+			}
+			.section1-content {
+				flex-direction:column;
+			}
+			section {
+				padding:7rem 3rem;
+			}
+
+			.tools {
+				margin-top:3rem;
+			}
+			.clients {
+				margin-top:3rem;
+			}
+
+			h2 {
+				font-size:3rem;
+				margin-bottom: 1rem;
+			}
+
+			.section1-content {
+				gap:3rem;
+
+			}
+			.madefor {
+				text-align: center;
+				font-size: 1.7rem;
+				margin-top: 2rem;
+				font-weight: 300;
+			}
+			.grid {
+				margin: 2.5rem -2rem;
+			}
+			.grid img {
+				max-height: 5rem;
+			}
+
+		}
+ 
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<span class="char">N</span>
+			<span class="char">a</span>
+			<span class="char">a</span>
+			<span class="char">m</span>
+			<span class="char space"></span>
+			<span class="char">K</span>
+			<span class="char">o</span>
+			<span class="char">m</span>
+			<span class="char">t</span>
+			<span class="char space"></span>
+			<span class="char">N</span>
+			<span class="char">o</span>
+			<span class="char">g</span>
+			<span class="char">.</span>
+			<span class="char">n</span>
+			<span class="char">l</span>
+		</div>
+		<div class="menu-right">
+			<a href="#">Delen</a>
+			<a href="#">Contact</a>
+		</div>
+	</header>
+	<section>
+		<div class="text">
+			<h1>Gebruiksvriendelijke <br>digitale oplossingen</h1>
+		<h2>Wat wil je?</h2>
+		<div class="content section1-content">
+			<div>
+				<ul class="keuzes">
+					<li><a href="#">Meer klanten krijgen</a></li>
+					<li><a href="#">Meer halen uit bestaande klanten</a></li>
+					<li><a href="#">Meer personeel</a></li>
+					<li><a href="#">Interne verbeteringen</a></li>
+				</ul>
+			</div>
+			<div class="text">
+				<h2 class="madefor">Digitale oplossingen geleverd voor:</h3>
+				<div class="grid">
+					<img src="clients/hema.svg"/>
+					<img src="clients/blokker.svg"/>
+					<img src="clients/jde.svg"/>
+					<img src="clients/kwikfit.svg"/>
+					<img src="clients/sanoma.svg"/>
+					<img src="clients/zeeman.svg"/>
+					<img src="clients/we.svg"/>
+					<!-- jaarbeursk, Shoeby? -->
+					<img src="clients/hunkemoller.svg"/>
+
+				</div>
+
+			</div>
+
+			</div>
+		</div>
+	</section>
+		<section style="background:#fff;">
+		<div>
+		<h2>Experience</h2>
+		<div class="content section1-content">
+			<div>
+				<p>I've worked with a divserse client base, from small-scale local startups to market-leading national brands. In these roles I've gained extensive experience with:
+					<ul>
+						<li>Juggling multiple projects with upcoming deadlines</li>
+						<li>Closely cooperating with developers, designers and product owners in SCRUM development cycles</li>
+					</ul>
+				</p>
+		
+				<div class="previous-jobs">
+					<div class="job">
+						<div class="job-left">
+							<h4>Reto</h4>
+							<p>Designer & Frontend Developer</p>
+						</div>
+						<div class="job-right">
+							<p>2019 - now</p>
+						</div>
+					</div>
+					<div class="job">
+						<div class="job-left">
+							<h4>Magnus</h4>
+							<p>Designer & Frontend Developer</p>
+						</div>
+						<div class="job-right">
+							<p>2015 - 2019</p>
+						</div>
+					</div>
+					<div class="job">
+						<div class="job-left">
+							<h4>Freelance</h4>
+							<p>Web Designer & Developer</p>
+						</div>
+						<div class="job-right">
+							<p>2010 - 2015</p>
+						</div>
+					</div>
+					<div class="job">
+						<div class="job-left">
+							<h4>Hull School of Art & Design</h4>
+							<p>BA Graphic Design</p>
+						</div>
+						<div class="job-right">
+							<p>2007 - 2010</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text">
+				<h3 class="clients">Clients</h3>
+				
+
+			</div>
+
+			</div>
+		</div>
+	</section>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+	<script>
+
+		gsap.from(".char", {y: '50%', duration:.5, stagger: 0.08, opacity: 0, ease: "slow(0.7,0.7,false)" })
+
+			// gsap.from(".text > *", { opacity: 0, duration: .3, stagger: .5, delay: .5, y: 15 })
+			// let section2 = gsap.timeline({
+			// 	scrollTrigger: {
+			// 		trigger: '.section2',
+			// 		start: 'center bottom',
+			// 		end: '+=300'
+			// 	}
+			// })
+			
+
+
+	</script>
+	
+</body>
+</html>
